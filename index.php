@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 if(!isset($_SESSION['count'])){
     $_SESSION['count']=0;
@@ -17,4 +18,7 @@ socket_write($sock,$msg);
 $read=socket_read($sock,1024);
 echo $read;
 socket_close($sock);
+
 ?>
+ 
+ 
